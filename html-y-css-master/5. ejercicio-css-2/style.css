@@ -1,0 +1,35 @@
+/*punto 1 */
+form{
+    display:block;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+/* punto 2 */
+input:required{
+    border: 1px solid red;
+}
+
+/* punto 3 */
+fieldset{
+    background: lightgrey;
+    padding: 1rem;
+}
+
+/* punto 4 */
+fieldset:hover{
+    background: grey;
+}
+
+/* punto 5 */
+fieldset:first-of-type , fieldset:last-of-type{
+    border-bottom: 5px solid black;
+}
+
+/* punto 6 */
+button{
+    background: black;
+    color: white;
+    border: none;
+}

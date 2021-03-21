@@ -1,0 +1,127 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: rgb(230, 182, 94);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body header h1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 4rem auto;
+    font-size: 7rem;
+    opacity: 0;
+}
+
+/* PEOPLE PROFILES */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main article{
+    width: 20rem;
+    height: fit-content;
+    margin: 1rem;
+    box-shadow: 0px 0px 20px grey;
+    transition: transform 0.5s;
+    opacity: 0;
+}
+
+main article:nth-of-type(2){
+    position: relative;
+    top:-30px;
+}
+
+/* hover animation */
+main article:hover{
+    transform: scale(1.05);
+}
+
+
+/* SECTION 1 */
+
+.namePhoto{
+    background: white;
+}
+
+/* img */
+main article section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main article section img{
+    background: grey;
+    height:10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: 2rem auto;
+    object-fit: cover;
+}
+
+/* names */
+main article section h1{
+    text-align: center;
+}
+
+/* rrss links position*/
+main article section ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* list styles */
+main article section ul li{
+    list-style: none;
+    height: 2rem;
+    width: 2rem;
+    background: grey;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+/* icons */
+main article section ul li a img{
+    position:relative;
+    width: auto;
+    height: 100%;
+    margin:0 auto;
+}
+
+
+/* SECTION 2 */
+.description{
+    background: darkviolet;
+    color:white;
+    padding:1.2rem;
+}
+
+main article section p{
+    margin-bottom: 1rem;
+}
+
+
+
+/* fade-in animation */
+
+header h1, main article{
+    animation: fadeIn ease 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+main article{
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn{
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}

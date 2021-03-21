@@ -1,0 +1,41 @@
+/* primera parte */
+/* apartado 1*/
+li:last-of-type{
+    background: rgb(0, 0, 255);
+}
+
+/* apartado 2*/
+li:nth-child(odd){
+    text-decoration:underline green;
+}
+
+/* apartado 3*/
+ul{
+    display: flex;
+}
+li{
+    margin-right:10px;
+}
+
+/* apartado 4*/
+li::after{
+    content: "\01F525";
+}
+
+/* apartado 5*/
+li[lang='en']{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+/* segunda parte */
+/* apartado 1 */
+ul:nth-of-type(2){
+    list-style:upper-roman;
+}
+
+/* apartado 2 */
+li:nth-of-type(2){
+    list-style: none;
+}
